@@ -25,7 +25,7 @@ class AnimalFindCommandTest extends TestCase
             ->assertExitCode(0);
 
         $this->artisan('animal:find', ['name' => $name])
-            ->expectsOutputToContain('Name: '. $name)
+            ->expectsOutputToContain('Name: '.$name)
             ->expectsOutputToContain('TypeName: cat')
             ->expectsOutputToContain('IsImaginary:')
             ->expectsOutputToContain('Says: meow')

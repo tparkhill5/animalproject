@@ -66,7 +66,7 @@ class AnimalFindCommand extends Command implements PromptsForMissingInput
                     $this->line(sprintf('%14s: %s', Str::studly($attr), $animal->$attr ?? '??'));
                 }
             }
-        // @codeCoverageIgnoreStart
+            // @codeCoverageIgnoreStart
         } catch (\Exception $e) {
             $this->error('Something went wrong!');
             $this->error($e->getMessage());

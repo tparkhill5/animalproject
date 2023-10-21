@@ -3,7 +3,6 @@
 namespace Tests\Unit;
 
 use App\Services\AnimalMsgService;
-use App\Types\Animals\Animal;
 use App\Types\Animals\Cat;
 use App\Types\Animals\Unicorn;
 use Tests\TestCase;
@@ -14,7 +13,7 @@ class AnimalMsgServiceTest extends TestCase
 
     public function setUp(): void
     {
-        parent:: setUp();
+        parent::setUp();
 
         $this->service = new AnimalMsgService;
     }

@@ -42,7 +42,7 @@ class AnimalService
         $query = AnimalModel::where('name', $name);
 
         if (! empty($type)) {
-            $query->whereHas('type', fn(Builder $query) => $query->where('name', $type));
+            $query->whereHas('type', fn (Builder $query) => $query->where('name', $type));
         }
 
         return $query->get();

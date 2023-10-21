@@ -65,7 +65,7 @@ class AnimalSaysCommand extends Command implements PromptsForMissingInput
                     $this->info('Saved!');
                 } catch (DuplicateAnimalNameException $e) {
                     $this->warn("Oops, looks like we already have a {$e->getType()} named {$e->getName()}!");
-                // @codeCoverageIgnoreStart
+                    // @codeCoverageIgnoreStart
                 } catch (\Exception $e) {
                     $this->error('Something went wrong!');
                     $this->error($e->getMessage());
@@ -74,7 +74,7 @@ class AnimalSaysCommand extends Command implements PromptsForMissingInput
             }
         } catch (AnimalNotFoundException $e) {
             $this->info($msg->unknown($type));
-        // @codeCoverageIgnoreStart
+            // @codeCoverageIgnoreStart
         } catch (\Exception $e) {
             $this->error('Something went wrong!');
             $this->error($e->getMessage());

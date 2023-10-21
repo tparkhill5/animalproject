@@ -17,7 +17,7 @@ class AnimalServiceTest extends TestCase
 
     public function setUp(): void
     {
-        parent:: setUp();
+        parent::setUp();
 
         $this->service = new AnimalService;
     }

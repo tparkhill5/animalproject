@@ -10,6 +10,10 @@ This project requires [Docker Desktop](https://www.docker.com/products/docker-de
 - Launch the container as a daemon with `./vendor/bin/sail up -d`
 - Run the database migrations with `./vendor/bin/sail artisan migrate --seed`
 
+## Linting
+
+Run the linter: `./vendor/bin/sail pint`
+
 ## Tests
 
 Execute the test suite, with coverage report: `./vendor/bin/sail test --coverage`
