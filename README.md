@@ -7,8 +7,8 @@
 
 This project requires [Docker Desktop](https://www.docker.com/products/docker-desktop/) or compatible to run.
 
-- Navigate to the projcet root `cd animalproject`
-- Run the boot script `sh boot.sh` (this assumes you have [compser](https://getcomposer.org/doc/00-intro.md) installed)
+- Navigate to the project root `cd animalproject`
+- Run the boot script `sh boot.sh` (this assumes you have [composer](https://getcomposer.org/doc/00-intro.md) installed)
 - Launch the container as a daemon with `./vendor/bin/sail up -d`
 - If port 80 is not available, you can override with `APP_PORT ./vendor/bin/sail up -d`
 - Run the database migrations with `./vendor/bin/sail artisan migrate --seed`
